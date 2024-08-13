@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.firstfield {
+    border-radius: 10px;
+}
+
+.lastfield {
+    border-radius: 10px;
+}
+
+#submit, #clean {
+    border-radius: 10px;
+}
+
+#submit {
+    background-color: green;
+    color: white;
+}
+
+#clean {
+    background-color: red;
+    color: white;
+}
+
+p {
+    font-weight: bold;
+}
+
+.labelzin {
+    font-weight: bold;
+}
+
+input {
+    border-radius: 10px;
+}
+
+#dadospessoais, #dadosprofissionais {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

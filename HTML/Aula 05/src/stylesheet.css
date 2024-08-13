@@ -1,0 +1,33 @@
+body {
+    background-color: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    background-color: rgb(1, 202, 138);
+    height: 30px;
+    width: 100%;
+}
+
+header {
+    top: 0%;
+    position: fixed;
+}
+
+footer {
+    bottom: 0%;
+    position: fixed;
+}
+
+main {
+    margin-top: 20%;
+}
+
+.box {
+    display: inline-block;
+}

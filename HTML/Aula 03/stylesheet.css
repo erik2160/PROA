@@ -1,0 +1,64 @@
+#div-main {
+  width: 50%;
+  height: 100px;
+  background-color: rgb(252, 191, 252);
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+#div-second {
+  width: 50%;
+  height: 100px;
+  background-color: aquamarine;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.imagemesquerda {
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+}
+
+.imagemesquerda img {
+  width: 40px;
+  height: 40px;
+}
+
+#p1 {
+  margin-left: 50px;
+  padding-right: 20px;
+  top: 10px;
+}
+
+.paragrafoesquerda p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-indent: 10px;
+    text-align: justify;
+}
+
+.imagemdireita {
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+}
+
+.imagemdireita img {
+  width: 40px;
+  height: 40px;
+}
+
+#p2 {
+  margin-left: 50px;
+  margin-right: 20px;
+  top: 10px;
+}
+
+.paragrafodireita p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-indent: 10px;
+    text-align: justify;
+}
+
