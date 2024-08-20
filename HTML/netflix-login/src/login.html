@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="imgs/logo.png" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <title>Netflix</title>
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <div id="text-logo">
+          <img src="imgs/text-logo.png" alt="Netflix logo" id="logo" />
+        </div>
+      </header>
+
+      <div id="background">
+        <img src="imgs/background.jpg" alt="background" id="bg-image" />
+      </div>
+
+      <div id="forms">
+        <h2 id="sign-in">Sign In</h2>
+        <form>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email or mobile number"
+          /><br /><br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+          /><br /><br />
+          <button type="button" id="sign-in-button">Sign in</button>
+          <p id="or">OR</p>
+          <button type="button" id="sign-in-code">Use a Sign-In Code</button>
+          <p id="forgot-password">Forgot password?</p>
+          <input
+            class="remember"
+            type="radio"
+            id="remember-button"
+            name="remember"
+            value="Remember-me"
+          />
+          <label class="remember" for="remember-me" id="remember-text"
+            >Remember me</label
+          ><br />
+          <p id="new-to-netflix">
+            New to netflix? <b id="sign-up-now">Sign up now</b>
+          </p>
+          <p id="bottom-text">
+            This page is protected by Google reCAPTCHA to<br />ensure you're not
+            a bot. Learn more.
+          </p>
+        </form>
+      </div>
+
+      <div id="footer" class="footer-class">
+        <p id="footer-text" class="footer-class">
+          Questions? Call 0800 591 3517
+        </p>
+        <p id="footer-faq" class="footer-class">FAQ</p>
+        <p id="footer-help-center" class="footer-class">Help Center</p>
+        <p id="footer-terms" class="footer-class">Terms of use</p>
+        <p id="footer-privacy" class="footer-class">Privacy</p>
+        <p id="footer-cookies" class="footer-class">Cookie preferences</p>
+        <p id="footer-corporate" class="footer-class">Corporate information</p>
+      </div>
+
+      <div id="bottom">
+        <p></p>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("sign-in-button")
+        .addEventListener("click", function () {
+          window.location.href = "users.html";
+        });
+    </script>
+  </body>
+</html>

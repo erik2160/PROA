@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #141414;
+}
+
+#main-text {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 30%;
+    left: 50%;
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding-left: 63%;
+}
+
+#profiles {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    top: 40%;
+    left: 21rem;
+    width: 1080;
+    height: 250px;
+}
+
+#profiles img {
+    border-width: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+img#img-one:hover,
+img#img-two:hover,
+img#img-three:hover {
+    border-color: white;
+}
+
+
+#users {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+    top: 64%;
+    left: 23rem;
+}
+
+#user-one,
+#user-two,
+#user-three {
+    opacity: 0.5;
+    color: #e1e1e1;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#user-one {
+    position: absolute;
+    left: 10px;
+}
+
+#user-two {
+    position: absolute;
+    left: 170px;
+}
+
+#user-three {
+    position: absolute;
+    left: 332px;
+}
+
+p#user-one:hover,
+p#user-two:hover,
+p#user-three:hover {
+    opacity: 1;
+    color: white;
+}
+
+#manage-profiles {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#manage-button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 8px 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #666;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    opacity: 0.5;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#manage-button:hover {
+    opacity: 1;
+    border-color: #ffffff;
+    color: #ffffff;
+}
