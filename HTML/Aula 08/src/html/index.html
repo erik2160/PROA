@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/stylesheet.css" />
+        <link
+            rel="shortcut icon"
+            href="https://cdn-icons-png.flaticon.com/512/82/82605.png"
+            type="image/x-icon"
+        />
+        <title>Banco</title>
+    </head>
+    <body>
+        <form id="form">
+            <div id="box">
+                <h1 id="welcome_text">Olá, Seja Bem-Vindo ao Banco!</h1>
+                <label for="name"><b>Digite seu nome:</b></label
+                ><br />
+                <input
+                    type="text"
+                    id="name_input"
+                    name="name"
+                    placeholder="Nome"
+                /><br />
+                <br />
+                <label class="label-senha" for="senha"
+                    ><b>Digite sua senha:</b></label
+                ><br />
+                <input
+                    type="password"
+                    id="senha_input"
+                    name="senha"
+                    placeholder="Senha"
+                /><br />
+                <br />
+                <button
+                    type="submit"
+                    >
+                    Enviar
+                </button>
+                <p id="aviso"></p>
+            </div>
+        </form>
+    </body>
+    <script src="../js/script.js"></script>
+    <script src="../js/banco.js"></script>
+</html>

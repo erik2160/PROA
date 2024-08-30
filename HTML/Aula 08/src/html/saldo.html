@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="https://cdn-icons-png.flaticon.com/512/82/82605.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="../css/saldo.css" />
+        <title>Banco - Saldo</title>
+    </head>
+    <body>
+        <div id="operacoes">
+            <h1>Saldo</h1>  
+            <div class="input-container">
+            <input type="password" id="saldo_senha_input" placeholder="Senha">
+            <button onclick="mostrarSaldo()">Ver saldo</button>
+        </div>
+        <p id="saldo_output">Saldo: R$ ***</p>
+        <button id="sair_button" onclick="voltarMenu()">Voltar</button>         
+    </body>
+    <script src="../js/saldo.js"></script>    
+</html>
