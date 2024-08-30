@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+body {
+    background-color: #f0f0f0   ;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 210px;
+}
+
+#form input {
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+p {
+    font-family: "New Amsterdam";
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+#button_input {
+    display: flex;
+    margin-left: 80px;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#button_input:hover {
+    background-color: #2980b9;
+}

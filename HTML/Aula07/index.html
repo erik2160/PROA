@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Aula DOM</title>
+  </head>
+  <body>
+    <div id="form">
+      <form action="" method="POST">
+        <p id="name_paragraph" onmouseover="mudarCorNome()">Nome</p>
+        <input
+          type="text"
+          name="name_input"
+          id="name_input"
+          placeholder="Nome do usuário"
+        />
+        <p id="email_paragraph" onmouseover="mudarCorEmail()">Email</p>
+        <input
+          type="email"
+          name="email_input"
+          id="email_input"
+          placeholder="E-mail do usuário"
+        />
+        <button type="submit" id="button_input">
+          Logar
+        </button>
+      </form>
+    </div>
+    <script src="validacao.js" defer></script>
+  </body>
+</html>
