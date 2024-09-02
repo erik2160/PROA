@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function mostrarNomeNaTela() {
     let nome = localStorage.getItem("nome");
-    document.getElementById("ola_nome").innerText = `Olá, ${nome}!`;
+    document.getElementById("ola_nome").innerText = `${nome}!`;
 }
 
 function sair() {
@@ -13,12 +13,6 @@ function sair() {
 
 function saldo() {
     window.location.href = "saldo.html";
-    // validarSenha
-    // if (senha === "3589") {
-    //     alert(`Seu saldo é: ${saldo}`);
-    // } else {
-    //     alert("Senha inválida!");
-    // }
 }
 
 function extrato() {
