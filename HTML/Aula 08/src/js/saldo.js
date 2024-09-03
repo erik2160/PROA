@@ -15,3 +15,7 @@ function atualizarNomeInicial() {
 function formatarValor(valor) {
     return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(valor);
 }
+
+function mensagemSair() {
+    alert(`${localStorage.getItem('nome')}, foi um prazer ter você por aqui!`);
+}

@@ -36,10 +36,9 @@ body {
 
 .agency{
     font-size: 18px;
-    font-weight: bold;
     margin-right: 48%;
     word-break: break-word;
-    width: 95px;
+    width: 200px;
     overflow-wrap: break-word;
     justify-content: flex-start;
 }

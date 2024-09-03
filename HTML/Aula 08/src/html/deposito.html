@@ -1,58 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="../css/deposito.css"/>
-    <link rel="shortcut icon" href="img/Logo - Banco Fundo Branco.jpeg" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/deposito.css" />
+    <link
+      rel="shortcut icon"
+      href="img/Logo - Banco Fundo Branco.jpeg"
+      type="image/x-icon"
+    />
     <title>Depósito</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="navbar">
-        <div class="logo">
-            <img src="img/Logo - Banco Fundo Amarelo Text Branco.jpeg" alt="Logo">
-        </div>
-        <a href="index.html" class="logout">Sair</a>
+      <div class="logo">
+        <img src="img/Logo - Banco Fundo Amarelo Text Branco.jpeg" alt="Logo" />
+      </div>
+      <a href="index.html" onclick="mensagemSair()" class="logout">Sair</a>
     </header>
     <div id="container">
-        <h1>Depositar para um contato</h1>  
-        <div class="search-container">
-            <input type="text" id="search_input" placeholder="Número da conta">
-            <button onclick="depositarContato()">Enviar</button>
-        </div>
-        <div class="recent-contacts">
-            <h2>Contatos Recentes</h2>
-            <ul>
-                <li>João da Silva - CPF: ***.***.***-12</li>
-                <li>Maria Oliveira - CPF: ***.***.***-34</li>
-                <li>Pedro Santos - CPF: ***.***.***-56</li>
-            </ul>
-        </div>
-        <div class="deposit-container">
-            <h2>Informações do Depósito</h2>
-            <input type="text" id="valor_input" placeholder="Valor do depósito">
-            <button onclick="deposito()">Depositar</button>
-        </div>
-        <div class="account-info">
-            <p><strong>Conta:</strong> 1234-5</p>
-            <p><strong>Nome:</strong> ***</p>
-        </div>
-        <div class="transaction-history">
-            <h2>Histórico de Transações</h2> <br>
-            <ul>
-                <li>01/08/2024 - Depósito de R$500,00</li>
-                <li>15/07/2024 - Depósito de R$1.000,00</li>
-            </ul>
-        </div>
-        <div class="notes">
-            <h2>Notas Importantes</h2> <br>
-            <p>Verifique sempre o valor do depósito antes de confirmar.</p>
-            <p>Acompanhe o saldo da conta após cada transação.</p>
-        </div>
+      <div class="deposit-container">
+        <h2>Informações do Depósito</h2>
+        <input type="text" id="valor_input" placeholder="Valor do depósito" />
+        <button onclick="depositarConta()">Depositar</button>
+      </div>
+      <div class="account-info">
+        <p><strong>Conta:</strong> 1234-5</p>
+        <p id="conta_nome"><strong>Nome:</strong> ***</p>
+      </div>
+      <div class="transaction-history">
+        <h2>Histórico de Transações</h2>
+        <br />
+        <ul>
+          <li>01/08/2024 - Depósito de R$500,00</li>
+          <li>15/07/2024 - Depósito de R$1.000,00</li>
+        </ul>
+      </div>
+      <div class="notes">
+        <h2>Notas Importantes</h2>
+        <br />
+        <p>Verifique sempre o valor do depósito antes de confirmar.</p>
+        <p>Acompanhe o saldo da conta após cada transação.</p>
+      </div>
     </div>
     <footer>
-        <p>&copy; 2024 Banco Tô Liso. Todos os direitos reservados.</p>
+      <p>&copy; 2024 Banco Tô Liso. Todos os direitos reservados.</p>
     </footer>
-    <script src="../js/"></script>
-</body>
+    <script src="../js/deposito.js"></script>
+  </body>
 </html>

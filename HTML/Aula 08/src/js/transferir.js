@@ -1,15 +1,18 @@
 function validarSaldo () {
-    const saldo = parseInt(localStorage.getItem('valor_Input'));
-    let valor = document.getElementById('valor_input');
-    let valorInput = parseInt(valor.value);
+    const saldo = parseInt(localStorage.getItem('saldo'));
+    let valor = parseInt(document.getElementById('valor_input').value);
 
-    if (saque(valorInput > saldosaque) || (valorInput <= 0)) {
+    if ((saldo < valor) || (valor <= 0) || (isNumber(valor))) {
         alert('Valor de transferência inválido.')
     } else {
-        const novoSaldo = saldo - valorInput;
+        const novoSaldo = saldo - valor;
         localStorage.setItem('saldo', novoSaldo);
         alert('Transferência concluída com sucesso.');
     }
+}
+
+function isNumber(value) {
+    return !!String(value).match(/\D/);
 }
 
 function sair() {
