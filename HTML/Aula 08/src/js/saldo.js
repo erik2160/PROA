@@ -1,23 +1,17 @@
-function mostrarSaldo() {
-    let senhaValue = document.getElementById('saldo_senha_input').value;
-    let senhaInput = document.getElementById('saldo_senha_input');
+window.onload = (event) => {
+    atualizarSaldoDisponivel();
+};
 
-    if (senhaValida(senhaValue)) {
-        let saldo = localStorage.getItem('saldo');
-        senhaInput.style.border = "";
-        document.getElementById('saldo_output').textContent = `Saldo: R$ ${saldo}`
-    } else {
-        senhaInput.style.border = 'red 2px solid'
-    }
+function atualizarSaldoDisponivel() {
+    let saldo = localStorage.getItem("saldo");
+    document.getElementById('disponivel_saque').innerText = `${formatarValor(saldo)}`;
 }
 
-function senhaValida(senha) {
-    if ((senha === "3589") && (senha.length != 0)) {
-        return true;
-    }
-    return false;
+function atualizarNomeInicial() {
+    const nome = localStorage.getItem("nome");
+    document.getElementById('bemvindo_texto').innerText = `Olá ${nome}! É um prazer ter você por aqui!`;
 }
 
-function voltarMenu() {
-    window.location.href = "banco.html"; 
+function formatarValor(valor) {
+    return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(valor);
 }

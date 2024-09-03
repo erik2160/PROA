@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saldo em Conta</title>
+    <link rel="stylesheet" href="../css/saldo.css">
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/Logo - Banco Fundo Branco.jpeg" type="image/x-icon">
+</head>
+<body class="blur">
+    <header class="header-container">
+        <img src="img/Logo - Banco Fundo Amarelo Text Branco.jpeg" alt="Logo" class="logo">
+        <div class="header-right">
+            <div class="agency">Ag: 1234 C/C: 56789-0</div>
+            <a href="#" class="logout">Sair</a>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="servicos.html">Início</a></li>
+            <li><a href="extrato.html">Extrato</a></li>
+            <li><a href="saldo.html">Saldos</a></li>
+            <li><a href="deposito.html">Depósitos</a></li>
+            <li><a href="transferir.html">Transferências</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h1>Saldo em Conta</h1>
+        
+        <div class="balance-info">
+            <div class="balance-item">
+                <strong>Disponível para Saque</strong>
+                <span>R$ *.***,**</span>
+            </div>
+            <div class="balance-item">
+                <strong>Débitos nos Últimos 7 Dias</strong>
+                <span class="debit">- R$ ***,**</span>
+            </div>
+        </div>
+        
+        <div class="transaction-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Descrição</th>
+                        <th>Valor (R$)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01/09</td>
+                        <td>Pagamento de Boleto</td>
+                        <td>-**,**</td>
+                    </tr>
+                    <tr>
+                        <td>02/09</td>
+                        <td>Depósito</td>
+                        <td>+*.***,**</td>
+                    </tr>
+                    <tr>
+                        <td>03/09</td>
+                        <td>Compra com Cartão de Débito</td>
+                        <td>-**,**</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Banco Tô Liso. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../js/saldo.js"></script>
+</body>
+</html>

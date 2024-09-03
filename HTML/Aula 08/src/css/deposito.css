@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
 * {
-    font-family: 'SUSE', sans-serif;
+    font-family: 'SUSE', Arial, sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -181,8 +181,10 @@ footer {
     color: #003366;
     text-align: center;
     padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
     width: 100%;
     font-weight: bold;
-    position: absolute;
-    bottom: 0;
+    height: 56px;
+    font-size: medium;
 }
