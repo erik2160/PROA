@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+* {
+    font-family: 'SUSE', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+#background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ffcc00;
+    padding: 10px 20px;
+    border-bottom: 4px solid #003366;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.logo img {
+    width: 70px;
+    border-radius: 5px;
+}
+
+.welcome-text {
+    color: #003366;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.icon-transfer {
+    font-size: 30px;
+    color: #003366;
+    margin-left: auto;
+}
+
+#operacoes {
+    padding: 30px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(243, 255, 114, 0.829);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 700px; 
+    z-index: 2;
+}
+
+h1, h2 {
+    font-size: 24px;
+    color: #003366;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#contatos-recentes {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 2;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+#transferir_button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #003366; 
+    color: #ffcc00; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#transferir_button:hover {
+    background-color: #ffcc00; 
+    color: #003366;
+}
+
+#transferir_button:active {
+    background-color: #002244;
+    color: #ffcc00;
+}
+
+.historico-section {
+    margin-top: 20px;
+}
+
+.transaction-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.transaction-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+
+.transaction-list li:last-child {
+    border-bottom: none;
+}
+
+.date {
+    font-weight: bold;
+    color: #003366;
+}
+
+.description {
+    color: #003366;
+}
+
+#sair_button {
+    background-color: rgb(201, 78, 78);
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#sair_button:hover {
+    background-color: rgb(85, 14, 14);
+}

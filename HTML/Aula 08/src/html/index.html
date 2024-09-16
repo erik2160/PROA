@@ -1,48 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../css/stylesheet.css" />
-        <link
-            rel="shortcut icon"
-            href="https://cdn-icons-png.flaticon.com/512/82/82605.png"
-            type="image/x-icon"
-        />
-        <title>Banco</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="../css/stylesheet.css"/>
+        <link rel="shortcut icon" href="img/Logo - Banco Fundo Branco.jpeg" type="image/x-icon"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Banco Tô Liso</title>
     </head>
     <body>
-        <form id="form">
-            <div id="box">
-                <h1 id="welcome_text">Olá, Seja Bem-Vindo ao Banco!</h1>
-                <label for="name"><b>Digite seu nome:</b></label
-                ><br />
-                <input
-                    type="text"
-                    id="name_input"
-                    name="name"
-                    placeholder="Nome"
-                /><br />
-                <br />
-                <label class="label-senha" for="senha"
-                    ><b>Digite sua senha:</b></label
-                ><br />
-                <input
-                    type="password"
-                    id="senha_input"
-                    name="senha"
-                    placeholder="Senha"
-                /><br />
-                <br />
-                <button
-                    type="submit"
-                    >
-                    Enviar
-                </button>
-                <p id="aviso"></p>
+        <header>
+            <div class="logo">
+                <img src="img/Logo - Banco Fundo Branco.jpeg" alt="Logo Banco Tô Liso">
             </div>
-        </form>
+            <nav>
+                <ul>
+                    <li><a href="login.html">Contas</a></li>
+                    <li><a href="login.html">Cartões</a></li>
+                    <li><a href="login.html">Investimentos</a></li>
+                    <li><a href="login.html">Crédito</a></li>
+                    <li><a href="login.html">Seguro</a></li>
+                    <li><a href="login.html">Atendimento</a></li>
+                </ul>
+            </nav>
+            <a href="login.html" class="login-btn">Login</a>
+        </header>
+
+        <section class="banner">
+            <img src="img/fotoDeFundo.jpg" alt="Imagem de Fundo">
+            <div class="banner-content">
+                <h1>Bem-vindo ao <br>Banco Tô Liso</h1>
+                <p class="banner-p">Sua vida financeira simplificada.</p> <br> <br>
+                <a href="login.html" class="cta-btn">Abra sua Conta</a>
+                <a href="#" class="cta-btn">Saiba Mais</a>
+            </div>
+        </section>
+    
+        <section class="features">
+            <div class="feature-item">
+                <i class="fas fa-wallet icon"></i>
+                <h2><a href="login.html">Conta Corrente</a></h2>
+                <p>Tenha controle total sobre suas finanças.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-credit-card icon"></i>
+                <h2><a href="login.html">Cartões de Crédito</a></h2>
+                <p>Aproveite as melhores condições.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-piggy-bank icon"><a href="login.html"></a></i> 
+                <h2><a href="login.html">Investimentos</a></h2>
+                <p>Faça seu dinheiro trabalhar para você.</p>
+            </div>
+        </section>        
+
+        <footer>
+            <p>&copy; 2024 Banco Tô Liso. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </footer>
     </body>
-    <script src="../js/script.js"></script>
-    <script src="../js/banco.js"></script>
 </html>

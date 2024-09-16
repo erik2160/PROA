@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extrato de Conta Corrente</title>
+    <link rel="stylesheet" href="../css/extrato.css">
+    <link rel="icon" href="img/Logo - Banco Fundo Branco.jpeg">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="img/Logo - Banco Fundo Amarelo Text Branco.jpeg" alt="Logo" class="logo">
+            <div class="header-right">
+                <span class="agency">Agência: 1234 Conta: 56789-0</span>
+                <a href="index.html" onclick="mensagemSair()" class="logout">Sair</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                
+                <li><a href="servicos.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="saldoBloqueado.html">Saldos</a></li>
+                <li><a href="deposito.html">Depósitos</a></li>
+                <li><a href="transferir.html">Transferências</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Extrato de Conta Corrente</h1>
+            <div class="period-select">
+                <label for="period">Período de consulta:</label>
+                <select id="period">
+                    <option>Últimos 7 dias</option>
+                    <option>Últimos 15 dias</option>
+                    <option>Últimos 30 dias</option>
+                </select>
+            </div>
+            <div class="balance-info">
+                <div class="balance-item">
+                    <span>Disponível para saque hoje</span>
+                    <strong id="valor_saque"></strong>
+                </div>
+                <div class="balance-item">
+                    <span>Débitos nos últimos 7 dias</span>
+                    <strong class="debit">- R$ 450,00</strong>
+                </div>
+                <div class="balance-item">
+                    <span>Débitos nos próximos 7 dias</span>
+                    <strong>- R$ 280,90</strong>
+                </div>
+            </div>
+
+            <div class="transaction-list">
+                <h2>Lançamentos</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Descrição</th>
+                            <th>Valor (R$)</th>
+                            <th>Saldo (R$)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01/05</td>
+                            <td>Transferência DOC para Conta Itau</td>
+                            <td>-50,00</td>
+                            <td>1.331,17</td>
+                        </tr>
+                        <tr>
+                            <td>02/05</td>
+                            <td>Débito automático - Netflix.com</td>
+                            <td>-20,00</td>
+                            <td>1.311,17</td>
+                        </tr>
+                        <tr>
+                            <td>03/05</td>
+                            <td>Pagamento de Boleto - Empresa ABC</td>
+                            <td>-20,00</td>
+                            <td>1.291,17</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Banco Tô Liso. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/extrato.js"></script>
+</body>
+</html>

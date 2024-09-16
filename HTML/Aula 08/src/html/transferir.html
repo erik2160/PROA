@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/transferir.css"/>
+    <link rel="shortcut icon" href="img/Logo - Banco Fundo Branco.jpeg" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+    <title>Transferir</title>
+</head>
+<body>
+    <div id="background">
+        <header class="navbar">
+            <div class="logo">
+                <img src="img/Logo - Banco Fundo Amarelo Text Branco.jpeg" alt="Logo do Banco">
+            </div>
+            <i class="fas fa-exchange-alt icon-transfer"></i>
+        </header>
+        <div id="operacoes">
+            <div class="transferir-section">
+                <h1>Transferir para:</h1>
+                <div class="input-container">
+                    <select id="contatos-recentes">
+                        <option value="1">Maria Oliveira - CPF: ***.***.***-34</option>
+                        <option value="2">João da Silva - CPF: ***.***.***-12</option>
+                        <option value="3">Pedro Santos - CPF: ***.***.***-56</option>
+                    </select>
+                    <input type="text" id="valor_input" placeholder="Valor da transferência">
+                    <button id="transferir_button" onclick="validarSaldo()">Transferir</button>
+                </div>
+            </div>
+            <div class="historico-section">
+                <h2>Histórico de Transferências</h2>
+                <div class="transaction-list">
+                    <ul>
+                        <li>
+                            <span class="date">01/08/2024</span> - <span class="description">Transferência de R$500,00 para Maria Oliveira</span>
+                        </li>
+                        <li>
+                            <span class="date">15/07/2024</span> - <span class="description">Transferência de R$1.000,00 para João da Silva</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button id="sair_button" onclick="sair()">Sair</button>
+        </div>
+    </div>
+    
+    <script src="../js/transferir.js"></script>
+</body>
+</html>
